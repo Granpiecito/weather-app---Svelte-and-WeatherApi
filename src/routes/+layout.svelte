@@ -4,7 +4,7 @@
 
 <style>
 	:global(body) {
-        background: #fdfdfd;
+        background: #bebebe;
 		display: grid;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
      Roboto, Oxygen, Ubuntu, Cantarell,
@@ -28,7 +28,7 @@
 		width: 400px;
         max-width: 100%;
 		display: block;
-        box-shadow: 0 0 100px rgba(0,0,0,0.1);
+        box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
 	}
 

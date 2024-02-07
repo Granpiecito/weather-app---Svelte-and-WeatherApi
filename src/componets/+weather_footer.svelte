@@ -4,38 +4,55 @@
 </script>
 
 <footer>
-	<div>
+	
 		{#await weatherpromise then weather}
-			<span> Humidity </span>
-			<span>
-				{weather.humidity}
-			</span>
+			<div>
+				<span>
+					{weather.humidity}
+				</span>
+				<small>Humidity</small>
+			</div>
 
-			<span> Wind Speed </span>
-			<span>
-				{weather.windspeed} Km/h
-			</span>
-			<span> FeelsLike </span>
-			<span>
-				{weather.feelslike}°
-			</span>
+			<div>
+				<span>
+					{weather.windspeed} Km/h
+				</span>
+				<small>Wind Speed</small>
+			</div>
+
+			<div>
+				<span>
+					{weather.feelslike}°
+				</span>
+				<small>FeelsLike</small>
+			</div>
 		{/await}
-	</div>
+
 </footer>
 
 <style>
 	footer {
-		border: 2px solid #000;
+		border: 2px solid #a7a7a7;
 		padding: 12px 32px;
 		width: 80%;
 		margin: 0 auto;
 		border-radius: 10px;
 		display: flex;
 		text-align: center;
-		justify-content: space-evenly;
+		justify-content: space-around;
+
+	}
+
+	small{
+		display: block;
+		color: #ffffff;
+		font-weight: 700;
 	}
 
 	span {
-		display: block;
+		color: #ffffff;
+		font-weight: 600;
+
 	}
+
 </style>
