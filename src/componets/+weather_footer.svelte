@@ -10,21 +10,21 @@
 				<span>
 					{weather.humidity}
 				</span>
-				<small>Humidity</small>
+				<strong>Humidity</strong>
 			</div>
 
 			<div>
 				<span>
 					{weather.windspeed} Km/h
 				</span>
-				<small>Wind Speed</small>
+				<strong>Wind Speed</strong>
 			</div>
 
 			<div>
 				<span>
 					{weather.feelslike}°
 				</span>
-				<small>FeelsLike</small>
+				<strong>FeelsLike</strong>
 			</div>
 		{/await}
 
@@ -33,25 +33,31 @@
 <style>
 	footer {
 		border: 2px solid #a7a7a7;
-		padding: 12px 32px;
+		padding: 12px 15px;
 		width: 80%;
 		margin: 0 auto;
 		border-radius: 10px;
 		display: flex;
 		text-align: center;
 		justify-content: space-around;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -32px;
 
 	}
 
-	small{
+	strong{
 		display: block;
 		color: #ffffff;
+		font-size: 14px;
 		font-weight: 700;
 	}
 
 	span {
 		color: #ffffff;
 		font-weight: 600;
+		font-size: 14px;
 
 	}
 
